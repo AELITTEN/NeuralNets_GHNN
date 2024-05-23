@@ -1,0 +1,34 @@
+{
+    "device": "gpu",
+    "seed": 10,
+    "data_path": "../../../../Data/doub_pend_training.h5.1",
+    "data_frac": 1,
+    "dtype": "float",
+    "path_logs": "logs",
+    "checkpoint_period": 100,
+    "nn_type": "double_HenonNet",
+    "modules": 3,
+    "units1": 25,
+    "units2": 25,
+    "activations": "sigmoid",
+    "learning_rate": 0.001,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "loss": "mse",
+    "max_epochs": 25000,
+    "batch_size": 500,
+    "model_path": ".",
+    "feature_names": [
+        "q_A",
+        "q_B",
+        "p_A",
+        "p_B"
+    ],
+    "label_names": [
+        "q_A",
+        "q_B",
+        "p_A",
+        "p_B"
+    ],
+    "period_q": 3.141592653589793
+}
